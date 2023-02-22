@@ -224,6 +224,14 @@ main {
   outline: none;
 }
 
+/* ADD disabled attribute to button */
+.button[disabled] {
+  cursor: not-allowed;
+  border: #a1a1a1;
+  background: #ccc;
+  color: #a1a1a1;
+}
+
 /* PROPERTY FOR SWAPPING PROPERTIES FROM NONE TO BLOCK */
 .open {
   display: block !important;
