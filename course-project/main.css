@@ -44,19 +44,12 @@
   text-align: center;
 }
 
-/* .plan__list {
-  width: 100%;
-  text-align: center;
-} */
-
 .plan {
   background: #d5ffdc;
   text-align: center;
   padding: 1rem;
   margin: 0.5rem 0;
-  /* display: inline-block; */
   width: 100%;
-  /* vertical-align: middle; */
 }
 
 .plan--highlighted {
@@ -103,26 +96,33 @@
 @media (min-width: 40rem) {
   .plan__list {
     width: 100%;
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .plan {
+    width: 30%;
+    min-width: 13rem;
+    max-width: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 28rem;
   }
 
   .plan--highlighted {
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
-  }
-
-  .plan {
-    display: inline-block;
-    width: 30%;
-    vertical-align: middle;
-    min-width: 13rem;
-    max-width: 25rem;
+    height: 30rem;
+    z-index: 50;
   }
 }
 
 /* KEY FEATURES SECTION*/
 #key-features {
   background: #ff1b68;
-  margin-top: 80px;
+  margin-top: 5rem;
   padding: 1rem;
 }
 
@@ -162,10 +162,13 @@
 /* @media query for applying values to desktop device */
 @media (min-width: 40rem) {
   .key-feature {
-    display: inline-block;
     width: 30%;
     max-width: 25rem;
-    vertical-align: top;
+  }
+
+  .key-feature__list {
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -206,7 +209,7 @@
 .modal__action:hover,
 .modal__action:active {
   background: #2ddf5c;
-  background-color: #2ddf5c;
+  border-color: #2ddf5c;
 }
 
 .modal__action--negative {
