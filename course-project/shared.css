@@ -1,5 +1,9 @@
 /* CSS DOCUMENT SHARED FOR COMMON SECTIONS ON OUR PROJECT */
 
+@import url("https://fonts.googleapis.com/css2?family=Roboto:400,900");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+@import url("https://fonts.googleapis.com/css?family=Anton");
+
 * {
   box-sizing: border-box;
 }
